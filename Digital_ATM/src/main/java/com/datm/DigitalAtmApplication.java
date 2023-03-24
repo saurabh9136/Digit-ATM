@@ -24,7 +24,7 @@ public class DigitalAtmApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		
 		UserAccountDTO userAccountDTO = new UserAccountDTO(
-	            "Saurabh Giri","saurabh@example.com","1234567890","savings",1234,1000.0,4321,new Date(12-11-2023));
+	            "Saurabh Giri","saurabh@gmail.com","1234567890","savings",1234,1000.0,4321,new Date(12-11-2023));
 
 		// Create an instance of UserAccount and set its properties
 		UserAccount userAccount = UserAccount.builder()
