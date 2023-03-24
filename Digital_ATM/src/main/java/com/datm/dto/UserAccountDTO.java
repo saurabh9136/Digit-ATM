@@ -43,7 +43,7 @@ public class UserAccountDTO { // we use dto class to transfer the object of our 
     @Pattern(regexp = "savings|current") // these annotation only allow user to choose either saving or current
 	private String accountType; // current/saving
 
-		
+	@NotNull	
 	private Integer cardNumber;
 	
 	@NotNull(message = "Invalid Date: Date is NULL")
@@ -51,7 +51,7 @@ public class UserAccountDTO { // we use dto class to transfer the object of our 
 	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy") // use for setting the formate of date
 	private Date  expiryDate;
 	
-	
+	@NotNull(message = "Invalid CVV: CVV is NULL")
 	private String CVV;
 	
 	
