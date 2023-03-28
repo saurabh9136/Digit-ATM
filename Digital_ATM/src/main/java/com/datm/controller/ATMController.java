@@ -89,7 +89,7 @@ public class ATMController {
 	@GetMapping("/checkbalance") // check balance
 	public double checkBalance(@RequestParam("cardNumber") int cardNumber , @RequestParam("Pin") int Pin)
 	{
-		return service.checkBalance(cardNumber, Pin);
+		return service.checkBalance(cardNumber, Pin); // calling checkBalance function
 	}
 	
 }
